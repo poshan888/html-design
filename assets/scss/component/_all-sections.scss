@@ -11,7 +11,7 @@ Start: Aside Panel
 aside {
   background-color: $white;
   height: 100%;
-  flex: 1 0 15%;
+  flex: 1 0 8%;
   position: relative;
   z-index: 1;
 
@@ -23,12 +23,12 @@ aside {
     }
     
     li {
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 0;
       position: relative;
       transition: all 0.6s ease;
       
       @include media(down, $breakpoint-md) {
-        padding: 0.75rem;
+        padding: 0.75rem 0;
       }
       
       &:not(:last-child) {
@@ -42,7 +42,7 @@ aside {
           width: 70%;
           margin: 0 auto;
           height: 0.8px;
-          background-color: $border-color;
+          background-color: rgba($color: #000000, $alpha: 0.05);
         }
       }
       
@@ -88,11 +88,7 @@ aside {
           }
         }
         .aside-menu-text {
-          font-size: 1.5rem;
-
-          @include media(down, $breakpoint-md) {
-            font-size: 1rem;
-          }
+          font-size: 0.6rem;
         }
       }
     }
@@ -103,7 +99,7 @@ aside {
 Start: Content Body
 =================================================================== */
 .content-body {
-  flex: 1 0 calc(85% - 3.5rem);
+  flex: 1 0 calc(92% - 3.5rem);
   padding: 2rem 3rem;
 
   @include media(down, $breakpoint-lg) {

@@ -1,0 +1,177 @@
+/* ===================================================================
+Start: Mid Body
+=================================================================== */
+.mid-body {
+  display: flex;
+}
+
+/* ===================================================================
+Start: Aside Panel
+=================================================================== */
+aside {
+  background-color: $white;
+  height: 100%;
+  flex: 1 0 15%;
+  position: relative;
+  z-index: 1;
+
+  .side-link-listing {
+    padding: 1rem;
+
+    @include media(down, $breakpoint-lg) {
+      padding: 0;
+    }
+    
+    li {
+      padding: 1.5rem 1rem;
+      position: relative;
+      transition: all 0.6s ease;
+      
+      @include media(down, $breakpoint-md) {
+        padding: 0.75rem;
+      }
+      
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          right: 50%;
+          transform: translate(-50%, -50%);
+          width: 70%;
+          margin: 0 auto;
+          height: 0.8px;
+          background-color: $border-color;
+        }
+      }
+      
+      &.active,
+      &:hover {
+        
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -1rem;
+          width: 8px;
+          height: 100%;
+          background-color: $success;
+
+          @include media(down, $breakpoint-lg) {
+            left: 0;
+          }
+        }
+        
+        a {
+
+          [class^="capshift-"] {
+            color: $success;
+
+
+          }
+          .aside-menu-text {
+            color: $black;
+          }
+        }
+      }
+      
+      a {
+        color: $gray;
+        font-weight: $fw-semibold;
+
+        [class^="capshift-"] {
+          font-size: 2rem;
+
+          @include media(down, $breakpoint-md) {
+            font-size: 1.5rem;
+          }
+        }
+        .aside-menu-text {
+          font-size: 1.5rem;
+
+          @include media(down, $breakpoint-md) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ===================================================================
+Start: Content Body
+=================================================================== */
+.content-body {
+  flex: 1 0 calc(85% - 3.5rem);
+  padding: 2rem 3rem;
+
+  @include media(down, $breakpoint-lg) {
+    padding: 2rem;
+    flex-basis: calc(85% - 4.1rem);
+  }
+
+  @include media(down, $breakpoint-md) {
+    padding: 1rem;
+  }
+}
+
+.section {
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+
+    @include media(down, $breakpoint-sm) {
+      gap: 1rem;
+    }
+
+    .tab-action-btns {
+      display: flex;      
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      @include media(down, $breakpoint-md) {
+        gap: 0.5rem;
+      }
+
+      .nav-tabs {
+        @include media(down, $breakpoint-sm) {
+          order: 3;
+        }
+        
+        .nav-link {
+
+          @include media(down, $breakpoint-sm) {
+            padding: 0.25rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 1.25rem;
+    font-weight: $fw-semibold;
+    margin-bottom: 0;
+  }
+}
+
+/* ===================================================================
+Start: Cards
+=================================================================== */
+// .service-card {
+//   flex: 1 0 calc(100% / 4.25);
+
+//   &-container {
+//     display: flex;
+//     gap: 1.5rem;
+//     flex-wrap: wrap;
+//   }
+// }

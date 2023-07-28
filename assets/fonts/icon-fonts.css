@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'capshift';
+  src:  url('fonts/capshift.eot?5fklyq');
+  src:  url('fonts/capshift.eot?5fklyq#iefix') format('embedded-opentype'),
+    url('fonts/capshift.ttf?5fklyq') format('truetype'),
+    url('fonts/capshift.woff?5fklyq') format('woff'),
+    url('fonts/capshift.svg?5fklyq#capshift') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="capshift-"], [class*=" capshift-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'capshift' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.capshift-shortlisted_deals:before {
+  content: "\e931";
+}
+.capshift-DAF-recommended-allocation:before {
+  content: "\e932";
+}
+.capshift-have-an-impact:before {
+  content: "\e933";
+}
+.capshift-Health-Pool:before {
+  content: "\e934";
+}
+.capshift-moderate:before {
+  content: "\e935";
+}
+.capshift-pick-your-investments:before {
+  content: "\e936";
+}
+.capshift-target-an-impact:before {
+  content: "\e937";
+}
+.capshift-Environment:before {
+  content: "\e92e";
+}
+.capshift-Financials:before {
+  content: "\e92f";
+}
+.capshift-Social:before {
+  content: "\e930";
+}
+.capshift-arrow:before {
+  content: "\e900";
+}
+.capshift-featured_deals:before {
+  content: "\e901";
+}
+.capshift-icn_build_a_portfolio:before {
+  content: "\e903";
+}
+.capshift-icn_my_deals:before {
+  content: "\e904";
+}
+.capshift-icn_my_investments:before {
+  content: "\e905";
+}
+.capshift-icn_upload_a_deal:before {
+  content: "\e906";
+}
+.capshift-impact_investment:before {
+  content: "\e907";
+}
+.capshift-investor:before {
+  content: "\e908";
+}
+.capshift-mail:before {
+  content: "\e909";
+}
+.capshift-menu:before {
+  content: "\e90a";
+}
+.capshift-notifications:before {
+  content: "\e90b";
+}
+.capshift-search:before {
+  content: "\e90c";
+}
+.capshift-star:before {
+  content: "\e90e";
+}
+.capshift-user:before {
+  content: "\e90f";
+}
+.capshift-aggressive:before {
+  content: "\e929";
+}
+.capshift-conservative:before {
+  content: "\e92a";
+}
+.capshift-cash:before {
+  content: "\e92b";
+}
+.capshift-climate:before {
+  content: "\e92c";
+}
+.capshift-community-pool:before {
+  content: "\e92d";
+}
+.capshift-edit:before {
+  content: "\e924";
+}
+.capshift-date-picker:before {
+  content: "\e925";
+}
+.capshift-current-value:before {
+  content: "\e926";
+}
+.capshift-globe:before {
+  content: "\e927";
+}
+.capshift-usa:before {
+  content: "\e928";
+}
+.capshift-time:before {
+  content: "\e923";
+}
+.capshift-transformational:before {
+  content: "\e91d";
+}
+.capshift-edit-document:before {
+  content: "\e91e";
+}
+.capshift-safe-liquid:before {
+  content: "\e920";
+}
+.capshift-diversified-portfolio:before {
+  content: "\e922";
+}
+.capshift-followed_deals:before {
+  content: "\e902";
+}
+.capshift-personal-info:before {
+  content: "\e91b";
+}
+.capshift-prioties:before {
+  content: "\e91c";
+}
+.capshift-filled-star:before {
+  content: "\e90d";
+}
+.capshift-goals:before {
+  content: "\e91f";
+}
+.capshift-shortlisted-deals:before {
+  content: "\e921";
+}
+.capshift-sort:before {
+  content: "\e913";
+}
+.capshift-filter:before {
+  content: "\e915";
+}
+.capshift-down-arrow:before {
+  content: "\e916";
+}
+.capshift-plus:before {
+  content: "\e917";
+}
+.capshift-refresh:before {
+  content: "\e918";
+}
+.capshift-tickmark:before {
+  content: "\e919";
+}
+.capshift-write-to-us:before {
+  content: "\e91a";
+}
+.capshift-close:before {
+  content: "\e914";
+}
+.capshift-arrow-right:before {
+  content: "\e911";
+}
+.capshift-arrow-left:before {
+  content: "\e912";
+}
+.capshift-arrow_drop_down:before {
+  content: "\e910";
+}

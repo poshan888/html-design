@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test HTML</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style-min.css">
+</head>
+<body>
+  <main class="d-flex flex-column h-100" id="mainWrapper">
+
+    <!-- ================================= Header: Starts ================================= -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+      <nav class="navbar navbar-expand-md bg-primary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand d-flex align-items-center gap-3" href="javascript:;">
+           <span class="capshift-menu text-info"></span> <img src="./assets/images/webp/logo.webp" alt="HTest Logo" srcset="./assets/images/webp/logo.webp">
+          </a> -->
+          <button class="navbar-toggler navbar-brand d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="capshift-menu text-info"></span> <img src="./assets/images/webp/logo.webp" alt="HTest Logo" srcset="./assets/images/webp/logo.webp">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-md-center">
+              <li class="nav-item">
+                <button type="button" class="btn btn-icon btn-white nav-link me-3" aria-label="Search">
+                  <span class="capshift-search"></span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-icon btn-white nav-link" aria-label="Notifications">
+                  <span class="capshift-notifications"></span>
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="javascript:;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="capshift-user"></span> John Fowler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><span class="capshift-Financials me-2"></span> Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#"><span class="capshift-edit me-2"></span> Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><span class="capshift-moderate me-2"></span> Activity</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ================================= Header: Ends ================================= -->
+
+    <!-- ================================= Mid Section: Starts ================================= -->
+    <section class="mid-body d-flex">
+      <!-- ================================= Aside Panel: Starts ================================= -->
+      <aside id="asidePanel" data-aos="fade-left" data-aos-duration="1500">
+        <ul class="side-link-listing">
+          <li>
+            <a href="javascript:;" title="Build a Portfolio" class="d-flex flex-column align-items-center text-center">
+              <span class="capshift-icn_build_a_portfolio mb-2"></span>
+              <span class="aside-menu-text">Build a Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" title="My Investments" class="d-flex flex-column align-items-center text-center">
+              <span class="capshift-icn_my_investments mb-2"></span>
+              <span class="aside-menu-text">My Investments</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="javascript:;" title="My Deals" class="d-flex flex-column align-items-center text-center">
+              <span class="capshift-icn_my_deals mb-2"></span>
+              <span class="aside-menu-text">My Deals</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" title="Upload a Deal" class="d-flex flex-column align-items-center text-center">
+              <span class="capshift-icn_upload_a_deal mb-2"></span>
+              <span class="aside-menu-text">Upload a Deal</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- ================================= Aside Panel: Ends ================================= -->
+
+      <!-- ================================= Panel Body: Starts ================================= -->
+      <section class="content-body" data-aos="fade-right" data-aos-duration="1500">
+        
+        <!-- ================================= Section Heading: Starts ================================= -->
+        <section class="section-heading" data-aos="fade-right" data-aos-duration="1200">
+          <h1 class="section-title">Explore Investments</h1>
+          <div class="tab-action-btns">
+            <button type="button" class="btn btn-icon" aria-labelledby="Search"><span class="capshift-search"></span></button>
+            <!-- ================================= Tab Title Sorting: Starts ================================= -->
+            <ul class="nav nav-tabs" id="dealFilterTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-deals-tab" data-bs-toggle="tab" data-bs-target="#all-deals-tab-pane" type="button" role="tab" aria-controls="all-deals-tab-pane" aria-selected="true">All Deals</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="shortlisted-deals-tab" data-bs-toggle="tab" data-bs-target="#shortlisted-deals-tab-pane" type="button" role="tab" aria-controls="shortlisted-deals-tab-pane" aria-selected="false">Shortlisted Deals</button>
+              </li>
+            </ul>
+            <!-- ================================= Tab Title Sorting: Ends ================================= -->            
+            <button type="button" class="btn btn-icon" aria-labelledby="Filter"><span class="capshift-filter"></span></button>
+          </div>
+        </section>
+        <!-- ================================= Section Heading: Ends ================================= -->
+        
+        <!-- ================================= Service type Badges: Start ================================= -->
+        <div class="service-type-alert-wrap d-flex align-items-center flex-wrap gap-md-3 gap-2 mb-md-4 mb-3">
+          <div class="badge text-bg-primary d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="1250">
+            <span>Sustainable Agriculture</span>
+            <button type="button" class="btn-close btn-close-white ms-2" aria-label="Close"></button>
+          </div>
+          <div class="badge text-bg-info text-white d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="1500">
+            <span>Alternative Energy</span>
+            <button type="button" class="btn-close btn-close-white ms-2" aria-label="Close"></button>
+          </div>
+          <div class="badge text-bg-danger d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="1750">
+            <span>Boston</span>
+            <button type="button" class="btn-close btn-close-white ms-2" aria-label="Close"></button>
+          </div>
+          <div class="badge text-bg-success text-white d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="2000">
+            <span>Microfinance</span>
+            <button type="button" class="btn-close btn-close-white ms-2" aria-label="Close"></button>
+          </div>
+          <div class="badge text-bg-tertiary text-white d-flex justify-content-between align-items-center" data-aos="fade-right" data-aos-duration="2250">
+            <span>Affordable Housing</span>
+            <button type="button" class="btn-close btn-close-white ms-2" aria-label="Close"></button>
+          </div>
+        </div>
+        <!-- ================================= Service type Badges: Ends ================================= -->
+
+        <section class="service-card-container">
+          <div class="row gy-4">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-1.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1750">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-2.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-3.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="2500">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-1.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-1.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1750">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-2.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-3.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="2500">
+              <div class="card service-card">
+                <div class="card-header">
+                  <div class="card-header-top">
+                    <img src="./assets/images/webp/domain_partner_logo.webp" alt="HTest Logo" srcset="./assets/images/webp/domain_partner_logo.webp" width="90" height="40">
+                    <button type="button" class="btn btn-icon btn-white">
+                      <span class="capshift-star"></span>
+                    </button>
+                  </div>
+                  <img src="./assets/images/webp/img-1.webp" class="card-img" alt="US Liquid Impact Fund LLC" src="./assets/images/webp/img-1.webp">
+                  <div class="card-header-bottom">
+                    <h4 class="card-title text-uppercase">US Liquid Impact Fund LLC</h4>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="d-inline-block text-truncate" style="max-width: 60%;">Foster development and low</span>
+                      <span>28 Days Left</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="card-badges-wrap d-flex gap-2">
+                      <span class="badge fw-bold text-secondary-emphasis bg-secondary-subtle">Global</span>
+                      <span class="badge fw-bold text-success-emphasis bg-success-subtle">USA</span>
+                    </div>
+                    <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                  </div>
+                  <p class="card-text mb-4">Dedicated ESG fixed-income manager, low risk, high liquidity</p>
+                  <ul class="product-property-listing">
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Asset Class</span>
+                      <span class="product-property-value"><strong>Direct Equity</strong></span>
+                    </li>
+                    <li class="product-property-item">
+                      <span class="product-property-label text-gray">Offering</span>
+                      <span class="product-property-value"><strong>$500,00</strong></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="card-action-btns d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-info" aria-labelledby="Clean Energy">Clean Energy</button>
+                    <button type="button" class="btn btn-danger" aria-labelledby="Health">Health</button>
+                  </div>
+                  <a href="javascript:;" class="types-read-more fw-semibold ms-2">+4</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <!-- ================================= Panel Body: Ends ================================= -->
+    </section>
+    <!-- ================================= Mid Section: Ends ================================= -->
+
+    <!-- ================================= Footer: Starts ================================= -->
+    <footer class="mt-auto bg-primary">
+      <div class="container-fluid">
+        <div class="py-3 d-flex flex-wrap flex-md-row flex-sm-column gap-2 align-items-center justify-content-md-between justify-content-center">
+          <img src="./assets/images/webp/logo.webp" alt="HTestHtml" srcset="./assets/images/webp/logo.webp" width="90" height="40">
+          <div class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center gap-md-3 gap-2">
+            <span class="capshift-write-to-us fs-6 text-gray"></span>
+            <span class="text-white fw-semibold">Write to us at:</span>
+            <a href="mailto:info@capshift.com" title="info@capshift.com" class="flex-grow-1 text-center">info@capshift.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ================================= Footer: Ends ================================= -->
+  </main>
+
+  <script src="./assets/js/javascript-lib-min.js"></script>
+</body>
+</html>
